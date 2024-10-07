@@ -230,6 +230,23 @@ class CallkitNotificationManager(private val context: Context) {
             R.id.tvNameCaller,
             data.getString(CallkitConstants.EXTRA_CALLKIT_NAME_CALLER, "")
         )
+        remoteViews.setTextViewText(
+            R.id.tvPickUpLocation,
+            data.getString(CallkitConstants.EXTRA_CALLKIT_PICKUP, "")
+        )
+        remoteViews.setTextViewText(
+            R.id.tvdropOffLocation,
+            data.getString(CallkitConstants.EXTRA_CALLKIT_DROP_OFF, "")
+        )
+        remoteViews.setTextViewText(
+            R.id.tvEstimationTime,
+            data.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_TIME, "")
+        )
+        remoteViews.setTextViewText(
+            R.id.tvEstimationPrice,
+            data.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, "")
+        )
+
         val isShowCallID = data?.getBoolean(CallkitConstants.EXTRA_CALLKIT_IS_SHOW_CALL_ID, false)
         if (isShowCallID == true) {
             remoteViews.setTextViewText(
