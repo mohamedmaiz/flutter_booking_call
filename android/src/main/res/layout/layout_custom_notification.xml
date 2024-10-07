@@ -81,8 +81,8 @@
                 android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:paddingRight="8dp"
                 android:src="@drawable/pick_up" />
 
@@ -109,8 +109,8 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
                     android:paddingRight="8dp"
                     android:src="@drawable/drop_off" />
 
