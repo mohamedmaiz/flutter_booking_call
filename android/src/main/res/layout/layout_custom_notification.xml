@@ -41,10 +41,10 @@
             
                 <TextView
                     android:id="@+id/tvEstimationPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:paddingLeft="30dp"
                     android:textStyle="bold"
-                    android:paddingLeft="40dp"
-                    android:paddingRight="30dp"
                     android:textColor="@color/accept"
                     android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                     android:textSize="17sp"/>
@@ -66,15 +66,12 @@
                     android:textSize="@dimen/size_text_action"/>
 
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+
                 <TextView
                     android:id="@+id/tvEstimationTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
                     android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                     android:textSize="@dimen/size_text_action"/>
 
@@ -138,20 +135,18 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="35dp"
                 android:textSize="13sp"/>
+            <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Compat.Notification.Line2"
+            android:textSize="0sp" />
 
 </LinearLayout>
 
 
-            <TextView
-                android:id="@+id/tvNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.Compat.Notification.Line2"
-                android:textSize="0sp" />
 
-        </LinearLayout>
-
-         <ImageView
+        <ImageView
             android:id="@+id/ivAvatar"
             android:layout_width="@dimen/base_margin_x4_8"
             android:layout_height="@dimen/base_margin_x4_8"
@@ -159,6 +154,9 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ic_default_avatar"
             android:visibility="invisible" />
+        </LinearLayout>
+
+
 
 
 
