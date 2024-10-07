@@ -20,7 +20,6 @@
                 android:id="@+id/tvNameCaller"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="16dp"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                 android:textSize="@dimen/size_text_action" />
                 
@@ -34,7 +33,6 @@
                <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="16dp"
                 android:text="Taxi Ride"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                 android:textSize="@dimen/size_text_action"/>
@@ -60,7 +58,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-                    android:paddingLeft="16dp"
                     android:text="Estimation Time"
        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                     android:textSize="@dimen/size_text_action"/>
@@ -87,7 +84,6 @@
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:paddingLeft="14dp"
                 android:paddingRight="8dp"
                 android:src="@drawable/pick_up" />
 
@@ -104,7 +100,7 @@
                 android:id="@+id/tvPickUpLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="35dp"
+                android:paddingLeft="8dp"
                 android:textSize="13sp"/>
 
             <LinearLayout
@@ -116,7 +112,6 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:paddingLeft="14dp"
                     android:paddingRight="8dp"
                     android:src="@drawable/drop_off" />
 
@@ -133,7 +128,7 @@
                 android:id="@+id/tvdropOffLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="35dp"
+                android:paddingLeft="8dp"
                 android:textSize="13sp"/>
             <TextView
             android:id="@+id/tvNumber"
@@ -150,7 +145,7 @@
             android:id="@+id/ivAvatar"
             android:layout_width="@dimen/base_margin_x4_8"
             android:layout_height="@dimen/base_margin_x4_8"
-            android:paddingRight="16dp"
+            android:paddingRight="4dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_default_avatar"
             android:visibility="invisible" />
