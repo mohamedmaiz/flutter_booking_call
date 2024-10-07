@@ -73,7 +73,7 @@ class CallkitIncomingActivity : Activity() {
     private lateinit var tvNameCaller: TextView
     private lateinit var tvPickUpLocation: TextView
     private lateinit var tvdropOffLocation: TextView
-    private lateinit var tcEstimationTime: TextView
+    private lateinit var tvEstimationTime: TextView
     private lateinit var tvEstimationPrice: TextView
 
     private lateinit var tvNumber: TextView
@@ -183,7 +183,7 @@ class CallkitIncomingActivity : Activity() {
         tvNameCaller.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_NAME_CALLER, "")
         tvPickUpLocation.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_PICKUP, "")
         tvdropOffLocation.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_DROP_OFF, "")
-        tcEstimationTime.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_TIME, "")
+        tvEstimationTime.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_TIME, "")
         tvEstimationPrice.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, "")
         tvNumber.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_HANDLE, "")
         tvNumber.visibility = if (isShowCallID == true) View.VISIBLE else View.INVISIBLE
@@ -193,7 +193,7 @@ class CallkitIncomingActivity : Activity() {
 			tvNumber.setTextColor(Color.parseColor(textColor))
             tvPickUpLocation.setTextColor(Color.parseColor(textColor))
             tvdropOffLocation.setTextColor(Color.parseColor(textColor))
-            tcEstimationTime.setTextColor(Color.parseColor(textColor))
+            tvEstimationTime.setTextColor(Color.parseColor(textColor))
             tvEstimationPrice.setTextColor(Color.parseColor(textColor))
 		} catch (error: Exception) {
 		}
@@ -275,7 +275,7 @@ class CallkitIncomingActivity : Activity() {
         tvNameCaller = findViewById(R.id.tvNameCaller)
         tvPickUpLocation = findViewById(R.id.tvPickUpLocation)
         tvdropOffLocation = findViewById(R.id.tvdropOffLocation)
-        tcEstimationTime = findViewById(R.id.tcEstimationTime)
+        tvEstimationTime = findViewById(R.id.tvEstimationTime)
         tvEstimationPrice = findViewById(R.id.tvEstimationPrice)
         tvNumber = findViewById(R.id.tvNumber)
         ivLogo = findViewById(R.id.ivLogo)
