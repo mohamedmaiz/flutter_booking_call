@@ -22,7 +22,46 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                 android:textSize="@dimen/size_text_action" />
-                 <TextView
+                <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <!-- Icon (ImageView) -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_video"  <!-- Replace with your icon -->
+        android:contentDescription="@string/icon_description"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Text (TextView) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example Text"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+         <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_video"  <!-- Replace with your icon -->
+        android:contentDescription="@string/icon_description"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Text (TextView) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test test"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+</LinearLayout>
+                 <!-- <TextView
                 android:id="@+id/tvPickUpLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -49,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textSize="@dimen/size_text_action" />
+                android:textSize="@dimen/size_text_action" /> -->
 
             <TextView
                 android:id="@+id/tvNumber"
@@ -88,16 +127,6 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/base_margin_half"
-                android:layout_marginLeft="@dimen/base_margin_half"
-                android:src="@drawable/ic_decline"
-                android:tint="@android:color/white"
-                app:tint="@android:color/white"
-                tools:ignore="UseAppTint" />
-
             <TextView
                 android:id="@+id/tvDecline"
                 style="@style/Widget.Compat.NotificationActionText"
@@ -126,16 +155,6 @@
             android:focusable="true"
             android:gravity="center"
             android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/base_margin_half"
-                android:layout_marginLeft="@dimen/base_margin_half"
-                android:src="@drawable/ic_accept"
-                android:tint="@android:color/white"
-                app:tint="@android:color/white"
-                tools:ignore="UseAppTint" />
 
             <TextView
                 android:id="@+id/tvAccept"
