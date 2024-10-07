@@ -15,95 +15,168 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_half"
+                android:orientation="horizontal">
             <TextView
                 android:id="@+id/tvNameCaller"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                 android:textSize="@dimen/size_text_action" />
-                <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:gravity="center_vertical"
-    android:padding="8dp">
-
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
     <ImageView
-        android:layout_width="wrap_content"
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/base_margin_x4_8"
+                android:layout_height="@dimen/base_margin_x4_8"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_avatar"
+                android:visibility="invisible" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingRight="30dp"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_video"  
-        android:layout_marginEnd="8dp" />
+                android:layout_marginTop="@dimen/base_margin_half"
+                android:orientation="horizontal">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Example Text"
+                    android:paddingLeft="16dp"
+                    android:text="Taxi Ride"
     android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textSize="@dimen/size_text_action" />
-         <ImageView
+                    android:textSize="@dimen/size_text_action"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/tvEstimationPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_video"  
-        android:layout_marginEnd="8dp" />
+                    android:paddingLeft="30dp"
+                    android:textStyle="bold"
+                    android:paddingRight="30dp"
+                    android:textColor="@color/accept"
+                    android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+                    android:textSize="17sp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_half"
+                android:orientation="horizontal">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test test"
+                    android:paddingLeft="16dp"
+                    android:text="Estimation Time"
        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textSize="@dimen/size_text_action" />
-        </LinearLayout>
+                    android:textSize="@dimen/size_text_action"/>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/tcEstimationTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+                    android:textSize="@dimen/size_text_action"/>
+
 
 </LinearLayout>
-                 <!-- <TextView
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_half"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="8dp"
+
+                android:src="@drawable/pick_up" />
+
+                 <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:text="Pick Up Location"
+                android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+                android:textSize="@dimen/size_text_action"/>
+
+         </LinearLayout>
+                 <TextView
                 android:id="@+id/tvPickUpLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:paddingLeft="35dp"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_half"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="8dp"
+                    android:src="@drawable/drop_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drop Off Location"
+                    android:paddingTop="6dp"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textSize="@dimen/size_text_action" />
+                    android:textSize="@dimen/size_text_action"/>
+
+            </LinearLayout>
                  <TextView
                 android:id="@+id/tvdropOffLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
-                android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textSize="@dimen/size_text_action" />
-                 <TextView
-                android:id="@+id/tcEstimationTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000000"
-                android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textSize="@dimen/size_text_action" />
-                 <TextView
-                android:id="@+id/tvEstimationPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000000"
-                android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textSize="@dimen/size_text_action" /> -->
+                android:paddingLeft="35dp"
+                android:textSize="13sp"/>
+
+</LinearLayout>
+
 
             <TextView
                 android:id="@+id/tvNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Line2"
-                android:textSize="@dimen/size_text_action" />
+                android:textSize="0sp" />
 
         </LinearLayout>
 
 
-        <ImageView
-            android:id="@+id/ivAvatar"
-            android:layout_width="@dimen/base_margin_x4_8"
-            android:layout_height="@dimen/base_margin_x4_8"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_default_avatar"
-            android:visibility="invisible" />
-    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
