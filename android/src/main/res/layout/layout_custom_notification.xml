@@ -30,15 +30,13 @@
     android:gravity="center_vertical"
     android:padding="8dp">
 
-    <!-- Icon (ImageView) -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_video"  <!-- Replace with your icon -->
+        android:src="@drawable/ic_video"  
         android:contentDescription="@string/icon_description"
         android:layout_marginEnd="8dp" />
 
-    <!-- Text (TextView) -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,11 +46,10 @@
          <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_video"  <!-- Replace with your icon -->
+        android:src="@drawable/ic_video"  
         android:contentDescription="@string/icon_description"
         android:layout_marginEnd="8dp" />
 
-    <!-- Text (TextView) -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
