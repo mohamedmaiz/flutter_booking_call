@@ -21,7 +21,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textSize="@dimen/size_text_action" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
                 
                
             <LinearLayout
@@ -36,12 +37,14 @@
                 android:text="Taxi Ride"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                 android:textSize="@dimen/size_text_action"/>
-            
+            <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
                 <TextView
                     android:id="@+id/tvEstimationPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="30dp"
                     android:textStyle="bold"
                     android:textColor="@color/accept"
                     android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
@@ -62,13 +65,15 @@
        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                     android:textSize="@dimen/size_text_action"/>
 
-
+<View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
                 <TextView
                     android:id="@+id/tvEstimationTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="30dp"
                     android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                     android:textSize="@dimen/size_text_action"/>
 
@@ -82,8 +87,8 @@
                 android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:paddingRight="8dp"
                 android:src="@drawable/pick_up" />
 
@@ -110,8 +115,8 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:paddingRight="8dp"
                     android:src="@drawable/drop_off" />
 
