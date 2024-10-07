@@ -38,10 +38,6 @@
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                 android:textSize="@dimen/size_text_action"/>
 
-            <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
                 <TextView
                     android:id="@+id/tvEstimationPrice"
                     android:layout_width="wrap_content"
@@ -69,10 +65,7 @@
        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                     android:textSize="@dimen/size_text_action"/>
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+           
                 <TextView
                     android:id="@+id/tvEstimationTime"
                     android:layout_width="wrap_content"
@@ -84,20 +77,7 @@
 
 </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/base_margin_half"
-                android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:paddingLeft="14dp"
-                android:paddingRight="8dp"
-
-                android:src="@drawable/pick_up" />
-
+         
                  <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -106,26 +86,12 @@
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                 android:textSize="@dimen/size_text_action"/>
 
-         </LinearLayout>
                  <TextView
                 android:id="@+id/tvPickUpLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="35dp"
                 android:textSize="13sp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/base_margin_half"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:paddingLeft="14dp"
-                    android:paddingRight="8dp"
-                    android:src="@drawable/drop_off" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -135,7 +101,6 @@
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                     android:textSize="@dimen/size_text_action"/>
 
-            </LinearLayout>
                  <TextView
                 android:id="@+id/tvdropOffLocation"
                 android:layout_width="wrap_content"
