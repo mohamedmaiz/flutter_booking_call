@@ -163,15 +163,15 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
                         android:paddingRight="8dp"
                         android:src="@drawable/pick_up" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="6dp"
+                        android:paddingTop="2dp"
                         android:text="Pick Up Location"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/size_text_action"
@@ -194,15 +194,15 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
                         android:paddingRight="8dp"
                         android:src="@drawable/drop_off" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="6dp"
+                        android:paddingTop="2dp"
                         android:text="Drop Off Location"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/size_text_action"
