@@ -61,16 +61,34 @@
                 android:layout_below="@id/ivAvatar"
                 android:layout_marginTop="8dp"
                 android:orientation="vertical"
+                android:paddingRight="60dp"
                 android:paddingLeft="60dp">
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_half"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
                 <TextView
                     android:id="@+id/tvNameCaller"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                    android:textSize="0sp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     tools:targetApi="o"
                     tools:text="Caller Name" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -85,7 +103,8 @@
                         android:text="Taxi Ride"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/size_text_action"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
 
                     <View
                         android:layout_width="0dp"
@@ -97,14 +116,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/accept"
                         android:textSize="17sp"
                         android:textStyle="bold" />
 
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_weight="1" />
+
 
 
                 </LinearLayout>
@@ -137,10 +153,7 @@
                         android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                         android:textSize="@dimen/size_text_action" />
 
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_weight="1" />
+
 
 
                 </LinearLayout>
