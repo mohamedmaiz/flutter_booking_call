@@ -21,7 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
 
@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:text="Taxi Ride"
                     android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                    android:textSize="@dimen/size_text_action"/>
+                    android:textSize="13"/>
 
                 <TextView
                     android:id="@+id/tvEstimationPrice"
@@ -46,7 +46,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/accept"
                     android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                    android:textSize="17sp"/>
+                    android:textSize="15sp"/>
 
 
             </LinearLayout>
