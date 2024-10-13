@@ -169,23 +169,16 @@
                         android:src="@drawable/pick_up" />
 
                     <TextView
+                        android:id="@+id/tvPickUpLocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="2dp"
-                        android:text="Pick Up Location"
+                        android:paddingLeft="20dp"
                         android:textColor="@android:color/white"
-                        android:textSize="@dimen/size_text_action"
-                        android:textStyle="bold" />
+                        android:textSize="13sp" />
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tvPickUpLocation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:textColor="@android:color/white"
-                    android:textSize="13sp" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -200,23 +193,16 @@
                         android:src="@drawable/drop_off" />
 
                     <TextView
+                        android:id="@+id/tvdropOffLocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="2dp"
-                        android:text="Drop Off Location"
+                        android:paddingLeft="20dp"
                         android:textColor="@android:color/white"
-                        android:textSize="@dimen/size_text_action"
-                        android:textStyle="bold" />
+                        android:textSize="13sp" />
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tvdropOffLocation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:textColor="@android:color/white"
-                    android:textSize="13sp" />
+
 
                 <TextView
                     android:id="@+id/tvNumber"
