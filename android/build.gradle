@@ -33,6 +33,9 @@ android {
     if (project.android.hasProperty("namespace")) {
         namespace "com.hiennv.flutter_callkit_incoming"
     }
+    kotlinOptions {
+    jvmTarget = JavaVersion.VERSION_1_8
+    }
     
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
