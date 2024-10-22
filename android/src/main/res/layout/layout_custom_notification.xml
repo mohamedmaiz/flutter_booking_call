@@ -50,36 +50,31 @@
 
 
             </LinearLayout>
-
-              <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/base_margin_half"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Pickup Estimation"
-                        android:textColor="@android:color/white"
-                        android:textSize="@dimen/size_text_action"
-                        android:textStyle="bold" />
-
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1 km - 3min"
-                        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
-                        android:textSize="@dimen/size_text_action" />
-
-                </LinearLayout>
                 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_half"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Up Estimation"
+                    android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+                    android:textSize="@dimen/size_text_action"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 km - 3min"
+                    android:paddingLeft="40dp"
+                    android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+                    android:textSize="@dimen/size_text_action"/>
+
+
+</LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,8 +84,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-                    android:text="Estimation Time"
-       android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+        android:text="Estimation Time"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                     android:textSize="@dimen/size_text_action"/>
 
                 <TextView
