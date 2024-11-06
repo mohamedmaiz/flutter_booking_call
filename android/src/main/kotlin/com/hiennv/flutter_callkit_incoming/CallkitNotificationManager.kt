@@ -246,6 +246,10 @@ class CallkitNotificationManager(private val context: Context) {
             R.id.tvEstimationPrice,
             data.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, "")
         )
+        remoteViews.setTextViewText(
+            R.id.tvEstimationBetweenDriverAndUser,
+            data.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, "")
+        )
 
         val isShowCallID = data?.getBoolean(CallkitConstants.EXTRA_CALLKIT_IS_SHOW_CALL_ID, false)
         if (isShowCallID == true) {
