@@ -185,7 +185,7 @@ class CallkitIncomingActivity : Activity() {
         tvdropOffLocation.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_DROP_OFF, "")
         tvEstimationTime.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_TIME, "")
         tvEstimationPrice.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, "")
-        tvEstimationBetweenDriverAndUser.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_DRIVER_USER, "test")
+        tvEstimationBetweenDriverAndUser.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_DRIVER_USER, "")
         tvNumber.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_HANDLE, "")
         tvNumber.visibility = if (isShowCallID == true) View.VISIBLE else View.INVISIBLE
 
