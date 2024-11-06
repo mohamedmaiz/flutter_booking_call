@@ -145,10 +145,11 @@
                         android:layout_weight="1" />
 
                     <TextView
+                        android:id="@+id/tvEstimationBetweenDriverAndUser"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1 km - 3min"
-                        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/size_text_action" />
 
 

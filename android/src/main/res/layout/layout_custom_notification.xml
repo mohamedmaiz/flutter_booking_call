@@ -65,6 +65,7 @@
                     android:textSize="@dimen/size_text_action"/>
 
                 <TextView
+                    android:id="@+id/tvEstimationBetweenDriverAndUser"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1 km - 3min"
