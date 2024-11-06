@@ -158,6 +158,7 @@ data class Data(val args: Map<String, Any?>) {
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_DROP_OFF, dropOff)
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_TIME, estimationTime)
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, estimationPrice)
+        bundle.putString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_DRIVER_USER, estimationBetweenDriverAndUser)
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_HANDLE, handle)
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_AVATAR, avatar)
         bundle.putInt(CallkitConstants.EXTRA_CALLKIT_TYPE, type)
