@@ -15,6 +15,8 @@ CallKitParams _$CallKitParamsFromJson(Map<String, dynamic> json) =>
       dropOff: json['dropOff'] as String?,
       estimationTime: json['estimationTime'] as String?,
       estimationPrice: json['estimationPrice'] as String?,
+      estimationBetweenDriverAndUser:
+          json['estimationBetweenDriverAndUser'] as String?,
       avatar: json['avatar'] as String?,
       handle: json['handle'] as String?,
       type: (json['type'] as num?)?.toInt(),
@@ -45,6 +47,7 @@ Map<String, dynamic> _$CallKitParamsToJson(CallKitParams instance) =>
       'dropOff': instance.dropOff,
       'estimationTime': instance.estimationTime,
       'estimationPrice': instance.estimationPrice,
+      'estimationBetweenDriverAndUser': instance.estimationBetweenDriverAndUser,
       'avatar': instance.avatar,
       'handle': instance.handle,
       'type': instance.type,
