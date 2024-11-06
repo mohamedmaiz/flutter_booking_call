@@ -23,6 +23,8 @@ data class Data(val args: Map<String, Any?>) {
     var estimationTime: String = (args["estimationTime"] as? String) ?: ""
     @JsonProperty("estimationPrice")
     var estimationPrice: String = (args["estimationPrice"] as? String) ?: ""
+    @JsonProperty("estimationBetweenDriverAndUser")
+    var estimationBetweenDriverAndUser: String = (args["estimationBetweenDriverAndUser"] as? String) ?: ""
     @JsonProperty("appName")
     var appName: String = (args["appName"] as? String) ?: ""
     @JsonProperty("handle")

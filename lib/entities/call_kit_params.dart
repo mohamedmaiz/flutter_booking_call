@@ -17,6 +17,7 @@ class CallKitParams {
     this.dropOff,
     this.estimationTime,
     this.estimationPrice,
+    this.estimationBetweenDriverAndUser,
     this.avatar,
     this.handle,
     this.type,
@@ -38,6 +39,7 @@ class CallKitParams {
   final String? dropOff;
   final String? estimationTime;
   final String? estimationPrice;
+  final String? estimationBetweenDriverAndUser;
   final String? avatar;
   final String? handle;
   final int? type;
