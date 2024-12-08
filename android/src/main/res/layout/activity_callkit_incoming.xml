@@ -143,6 +143,7 @@
                         android:id="@+id/tvDiscount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="--"
                         android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                         android:textColor="@color/accept"
                         android:textSize="17sp"

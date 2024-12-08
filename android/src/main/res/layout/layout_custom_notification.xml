@@ -68,9 +68,10 @@
                     android:id="@+id/tvDiscount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="--"
                     android:paddingLeft="40dp"
                     android:textStyle="bold"
-                    android:textColor="@color/accept"
+                    android:textColor="@android:color/holo_red_dark"
                     android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
                     android:textSize="17sp"/>
 
