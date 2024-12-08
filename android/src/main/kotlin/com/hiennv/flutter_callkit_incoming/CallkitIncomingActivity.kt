@@ -75,6 +75,7 @@ class CallkitIncomingActivity : Activity() {
     private lateinit var tvdropOffLocation: TextView
     private lateinit var tvEstimationTime: TextView
     private lateinit var tvEstimationPrice: TextView
+    private lateinit var tvDiscount: TextView
     private lateinit var tvEstimationBetweenDriverAndUser: TextView
     private lateinit var tvNumber: TextView
     private lateinit var ivLogo: ImageView
@@ -185,6 +186,8 @@ class CallkitIncomingActivity : Activity() {
         tvdropOffLocation.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_DROP_OFF, "")
         tvEstimationTime.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_TIME, "")
         tvEstimationPrice.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, "")
+        tvDiscount.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_DISCOUNT, "")
+
         tvEstimationBetweenDriverAndUser.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_DRIVER_USER, "")
         tvNumber.text = data?.getString(CallkitConstants.EXTRA_CALLKIT_HANDLE, "")
         tvNumber.visibility = if (isShowCallID == true) View.VISIBLE else View.INVISIBLE
@@ -196,6 +199,7 @@ class CallkitIncomingActivity : Activity() {
             tvdropOffLocation.setTextColor(Color.parseColor(textColor))
             tvEstimationTime.setTextColor(Color.parseColor(textColor))
             tvEstimationPrice.setTextColor(Color.parseColor(textColor))
+            tvDiscount.setTextColor(Color.parseColor(textColor))
             tvEstimationBetweenDriverAndUser.setTextColor(Color.parseColor(textColor))
 		} catch (error: Exception) {
 		}
@@ -279,6 +283,7 @@ class CallkitIncomingActivity : Activity() {
         tvdropOffLocation = findViewById(R.id.tvdropOffLocation)
         tvEstimationTime = findViewById(R.id.tvEstimationTime)
         tvEstimationPrice = findViewById(R.id.tvEstimationPrice)
+        tvDiscount = findViewById(R.id.tvDiscount)
         tvEstimationBetweenDriverAndUser = findViewById(R.id.tvEstimationBetweenDriverAndUser)
         tvNumber = findViewById(R.id.tvNumber)
         ivLogo = findViewById(R.id.ivLogo)

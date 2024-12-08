@@ -247,6 +247,11 @@ class CallkitNotificationManager(private val context: Context) {
             data.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, "")
         )
         remoteViews.setTextViewText(
+            R.id.tvDiscount,
+            data.getString(CallkitConstants.EXTRA_CALLKIT_DISCOUNT, "")
+        )
+        
+        remoteViews.setTextViewText(
             R.id.tvEstimationBetweenDriverAndUser,
             data.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_DRIVER_USER, "")
         )

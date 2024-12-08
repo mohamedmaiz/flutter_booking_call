@@ -21,6 +21,8 @@ data class Data(val args: Map<String, Any?>) {
     var dropOff: String = (args["dropOff"] as? String) ?: ""
     @JsonProperty("estimationTime")
     var estimationTime: String = (args["estimationTime"] as? String) ?: ""
+      @JsonProperty("discount")
+    var discount: String = (args["discount"] as? String) ?: ""
     @JsonProperty("estimationPrice")
     var estimationPrice: String = (args["estimationPrice"] as? String) ?: ""
     @JsonProperty("estimationBetweenDriverAndUser")
@@ -157,6 +159,7 @@ data class Data(val args: Map<String, Any?>) {
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_PICKUP, pickup)
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_DROP_OFF, dropOff)
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_TIME, estimationTime)
+        bundle.putString(CallkitConstants.EXTRA_CALLKIT_DISCOUNT, discount)
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, estimationPrice)
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_DRIVER_USER, estimationBetweenDriverAndUser)
         bundle.putString(CallkitConstants.EXTRA_CALLKIT_HANDLE, handle)
@@ -262,6 +265,7 @@ data class Data(val args: Map<String, Any?>) {
                 bundle.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_TIME, "")
             data.estimationPrice =
                 bundle.getString(CallkitConstants.EXTRA_CALLKIT_ESTIMATION_PRICE, "")   
+            data.discount = bundle.getString(CallkitConstants.EXTRA_CALLKIT_DISCOUNT, "")    
             data.appName =
                 bundle.getString(CallkitConstants.EXTRA_CALLKIT_APP_NAME, "")
             data.handle =
